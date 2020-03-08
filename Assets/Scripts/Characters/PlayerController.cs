@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Camera cam;
     public LayerMask walkableLayer;
 
-    void Start()
+    void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
         cam = Camera.main;
