@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using NavGame.Core;
 
-public class PlayerController : MonoBehaviour
+[RequireComponent(typeof(NavMeshAgent))]
+public class PlayerController : TouchableGameObject
 {
     NavMeshAgent agent;
     Camera cam;
