@@ -4,11 +4,34 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: fence
+    100004: fencewire
+    100006: fountain
+    100008: Plane
     400000: //RootNode
+    400002: fence
+    400004: fencewire
+    400006: fountain
+    400008: Plane
     2100000: fountain
+    2100002: fencewire__COLORR
+    2100004: unnamed
+    2100006: fence__COLORR
     2300000: //RootNode
+    2300002: fence
+    2300004: fencewire
+    2300006: fountain
+    2300008: Plane
     3300000: //RootNode
+    3300002: fence
+    3300004: fencewire
+    3300006: fountain
+    3300008: Plane
     4300000: Cylinder
+    4300002: fencewire
+    4300004: Plane
+    4300006: fence
+    4300008: fountain
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
