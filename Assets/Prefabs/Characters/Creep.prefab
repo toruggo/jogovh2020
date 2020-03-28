@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8422216016384967465}
   - component: {fileID: 8422216016384967470}
   - component: {fileID: 8422216016384967471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 8422216016674240202}
   - component: {fileID: 2243741418284981730}
   - component: {fileID: 6170004565711950810}
+  - component: {fileID: 3802260901603633976}
   m_Layer: 0
   m_Name: Creep
   m_TagString: Untagged
@@ -213,6 +214,8 @@ MonoBehaviour:
   offenseStats:
     damage: 10
     attackSpeed: 1
+  enemyLayers:
+  - Infantry
 --- !u!114 &2243741418284981730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +248,19 @@ MonoBehaviour:
   healthUIPrefab: {fileID: 2437733647619140071, guid: 02b618c7a671f2e439fa7b0588e9aa0d,
     type: 3}
   healthPosition: {fileID: 1811736467980990686}
+--- !u!135 &3802260901603633976
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422216016674240203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8422216017535478937
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +272,6 @@ GameObject:
   - component: {fileID: 8422216017535478936}
   - component: {fileID: 8422216017535478917}
   - component: {fileID: 8422216017535478938}
-  - component: {fileID: 8422216017535478939}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -323,16 +338,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8422216017535478939
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8422216017535478937}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
