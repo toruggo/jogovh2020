@@ -6,6 +6,7 @@ namespace NavGame.Core
 {
     public class DamageableGameObject : TouchableGameObject
     {
+        //correct
 		public DefenseStats defenseStats;
 		public int currentHealth;
         public Transform damageTransform;
