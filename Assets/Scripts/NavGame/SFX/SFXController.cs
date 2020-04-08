@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NavGame.Managers;
 
-public class SFXController : MonoBehaviour
+namespace NavGame.Effects
 {
-    // Start is called before the first frame update
-    void Start()
+    public abstract class SFXController : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        protected void PlayEffects(Vector3 point, string sound, GameObject effects, Quaternion rotation)
+        {
+            AudioManager.instance.Play(sound, point);
+            if(effects != null)
+            {
+                Instantiate(effects, point, rotation);
+            }
+        }
     }
 }
