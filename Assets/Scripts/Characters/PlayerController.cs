@@ -16,12 +16,6 @@ public class PlayerController : TouchableGameObject
     {
         agent = GetComponent<NavMeshAgent>();
         cam = Camera.main;
-
-        GameObject obj = GameObject.FindWithTag("Finish");
-        DamageableGameObject dgo = obj.GetComponent<DamageableGameObject>();
-        GameObject projectile = Instantiate(prefab, transform.position, Quaternion.identity) as GameObject;
-        ProjectileController controller = projectile.GetComponent<ProjectileController>();
-        controller.Init(dgo, 20);
     }
 
     void Update()
