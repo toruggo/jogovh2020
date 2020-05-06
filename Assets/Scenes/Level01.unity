@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5078073, g: 0.7830189, b: 0.37304202, a: 0.57254905}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0.57254905}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5078073, g: 0.7830189, b: 0.37304202, a: 0.57254905}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0.57254905}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2088,7 +2088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5078073, g: 0.7830189, b: 0.37304202, a: 0.57254905}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 0.57254905}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2615,7 +2615,7 @@ MonoBehaviour:
   - {fileID: 1470159287}
   - {fileID: 124767340}
   - {fileID: 60007682}
-  actionsCost:
+  actionCosts:
   - {fileID: 262235270}
   - {fileID: 683114262}
   - {fileID: 132893523}

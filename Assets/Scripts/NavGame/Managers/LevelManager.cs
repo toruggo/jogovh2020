@@ -12,6 +12,7 @@ namespace NavGame.Managers
         public Action[] actions;
         public OnActionSelectEvent onActionSelect;
         public OnActionCancelEvent onActionCancel;
+        public OnActionCooldownUpdateEvent onActionCooldownUpdate;
         protected int selectedAction = -1;
 
         protected virtual void Awake()
@@ -33,7 +34,7 @@ namespace NavGame.Managers
 
         public virtual void SelectAction(int actionIndex)
         {
-            Debug.Log("Selected: " + actions[actionIndex].prefab.name);
+            CancelAction();
             selectedAction = actionIndex;
             if(onActionSelect != null)
             {
@@ -43,8 +44,10 @@ namespace NavGame.Managers
 
         public virtual void DoAction(Vector3 point)
         {
-            Debug.Log("Do: " + actions[selectedAction].prefab.name);
             Instantiate(actions[selectedAction].prefab, point, Quaternion.identity);
+            int index = selectedAction;
+            selectedAction = -1;
+            StartCoroutine(ProcessCooldown(index));
         }
         
         public virtual void CancelAction()
@@ -63,6 +66,26 @@ namespace NavGame.Managers
         public bool IsActionSelected()
         {
             return selectedAction != -1;
+        }
+
+        IEnumerator ProcessCooldown(int actionIndex)
+        {
+            Action action = actions[actionIndex];
+            action.coolDown = action.waitTime;
+            while(action.coolDown > 0)
+            {
+                if(onActionCooldownUpdate != null)
+                {
+                    onActionCooldownUpdate(actionIndex, action.coolDown, action.waitTime);
+                }
+                yield return null;
+                action.coolDown -= Time.deltaTime;
+            }
+            action.coolDown = 0f;
+            if(onActionCooldownUpdate != null)
+            {
+                onActionCooldownUpdate(actionIndex, action.coolDown, action.waitTime);
+            }
         }
 
         protected abstract IEnumerator SpawnBad();
