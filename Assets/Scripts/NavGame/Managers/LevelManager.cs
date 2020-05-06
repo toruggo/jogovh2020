@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NavGame.Core;
 
 namespace NavGame.Managers
 {
@@ -9,6 +10,8 @@ namespace NavGame.Managers
     {
         public static LevelManager instance;
         public Action[] actions;
+        public OnActionSelectEvent onActionSelect;
+        public OnActionCancelEvent onActionCancel;
         protected int selectedAction = -1;
 
         protected virtual void Awake()
@@ -32,6 +35,10 @@ namespace NavGame.Managers
         {
             Debug.Log("Selected: " + actions[actionIndex].prefab.name);
             selectedAction = actionIndex;
+            if(onActionSelect != null)
+            {
+                onActionSelect(actionIndex);
+            }
         }
 
         public virtual void DoAction(Vector3 point)
@@ -44,7 +51,12 @@ namespace NavGame.Managers
         {
             if(selectedAction != -1)
             {
+                int index = selectedAction;
                 selectedAction = -1;
+                if(onActionCancel != null)
+                {
+                    onActionCancel(index);
+                }
             }
         }
 
