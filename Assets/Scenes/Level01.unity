@@ -1674,7 +1674,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'NEXT WAVE:'
+  m_Text: 'NEXT WAVE: '
 --- !u!222 &777799547
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2034,8 +2034,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -220.67, y: 253.11}
-  m_SizeDelta: {x: -1106.31, y: -547.01}
+  m_AnchoredPosition: {x: -216.38, y: 253.11}
+  m_SizeDelta: {x: -1097.72, y: -547.01}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1232711290
 MonoBehaviour:
@@ -3361,7 +3361,7 @@ MonoBehaviour:
     type: 3}
   badWaves: 3
   monstersPerWave: 2
-  waitTimeFirstWave: 2
+  waitTimeFirstWave: 5
   waitTimeBetweenWaves: 4
 --- !u!114 &1848935660
 MonoBehaviour:
@@ -3380,6 +3380,7 @@ MonoBehaviour:
   errorTime: 1.5
   coinText: {fileID: 1515695111}
   waveCountText: {fileID: 413154961}
+  waveCountdownText: {fileID: 1678872787}
   cooldownObjects:
   - {fileID: 1470159287}
   - {fileID: 124767340}
