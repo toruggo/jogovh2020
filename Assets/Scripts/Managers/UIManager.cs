@@ -6,6 +6,9 @@ using NavGame.Managers;
 
 public class UIManager : MonoBehaviour
 {
+    public GameObject errorPanel;
+    public Text errorText;
+    public float errorTime = 1.5f;
     public Text coinText;
     public GameObject[] cooldownObjects;
     public Text[] actionCosts;
@@ -13,16 +16,16 @@ public class UIManager : MonoBehaviour
 
     void Awake()
     {
-        InitializeUI();
         LevelManager.instance.onActionSelect += OnActionSelect;
         LevelManager.instance.onActionCancel += OnActionCancel;
         LevelManager.instance.onActionCooldownUpdate += OnActionCooldownUpdate;
         LevelManager.instance.onResourceUpdate += OnResourceUpdate;
+        LevelManager.instance.onReportableError += OnReportableError;
     }
 
     void Start()
     {
-        
+        InitializeUI();
     }
 
     void InitializeUI()
@@ -35,6 +38,7 @@ public class UIManager : MonoBehaviour
 
             actionCosts[i].text = "(" + LevelManager.instance.actions[i].cost + ")";
         }
+        errorPanel.SetActive(false);
     }
 
     void OnActionSelect(int actionIndex)
@@ -56,5 +60,18 @@ public class UIManager : MonoBehaviour
     void OnResourceUpdate(int currentAmount)
     {
         coinText.text = "x " + currentAmount;
+    }
+
+    void OnReportableError(string message)
+    {
+        errorText.text = message;
+        errorPanel.SetActive(true);
+        StartCoroutine(TurnOffError());
+    }
+
+    IEnumerator TurnOffError()
+    {
+        yield return new WaitForSeconds(errorTime);
+        errorPanel.SetActive(false);
     }
 }

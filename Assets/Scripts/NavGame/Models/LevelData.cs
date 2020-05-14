@@ -13,7 +13,8 @@ namespace NavGame.Models
 
         public void ConsumeCoins(int amount)
         {
-            CoinCount =- amount;
+            ValidateCoinAmount(amount);
+            CoinCount -= amount;
         }
 
         public void ValidateCoinAmount(int amount)
