@@ -1696,6 +1696,7 @@ GameObject:
   - component: {fileID: 829174315}
   - component: {fileID: 829174314}
   - component: {fileID: 829174317}
+  - component: {fileID: 829174318}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1791,6 +1792,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   angularSpeed: 6
   contactRadius: 0.8
+--- !u!114 &829174318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829174312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e4cb9c67f8f8a41aa9e82b78329b1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothness: 0.1
 --- !u!1 &852309681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,6 +2011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Raposita
       objectReference: {fileID: 0}
+    - target: {fileID: 434896803271618090, guid: 4f682bc0156172945b41b2ee45fd9fb6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1c4672b8625328d4da75ef60da840602, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f682bc0156172945b41b2ee45fd9fb6, type: 3}
 --- !u!4 &1130604804 stripped
