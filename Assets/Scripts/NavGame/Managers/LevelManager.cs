@@ -20,6 +20,7 @@ namespace NavGame.Managers
         public OnWaveUpdateEvent onWaveUpdate;
         public OnWaveCountdownEvent onWaveCountdown;
         public OnDefeatEvent onDefeat;
+        public OnVictoryEvent onVictory;
 
         public bool isPaused { get; private set; } = false;
 
@@ -156,6 +157,14 @@ namespace NavGame.Managers
             if (onDefeat != null)
             {
                 onDefeat();
+            }
+        }
+
+        protected void EmitVictoryEvent()
+        {
+            if(onVictory != null)
+            {
+                onVictory();
             }
         }
 

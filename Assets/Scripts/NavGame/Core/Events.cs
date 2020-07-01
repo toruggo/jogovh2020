@@ -33,4 +33,6 @@ namespace NavGame.Core
     public delegate void OnWaveCountdownEvent(float remainingTime);
 
     public delegate void OnDefeatEvent();
+
+    public delegate void OnVictoryEvent();
 }
