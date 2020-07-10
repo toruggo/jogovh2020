@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 870d015181c58664aab2934f2770e3b2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: tower_armature
+    100004: tower_base
+    100006: tower_chair
+    100008: tower_chair 1
+    100010: tower_chargerCable
+    100012: tower_desktop
+    100014: tower_desktop 1
+    100016: tower_master
+    100018: tower_noBreak
+    100020: tower_noBreak 1
+    100022: tower_plateBase
+    100024: tower_plateMid
+    100026: tower_plateTip
+    100028: tower_powerCablePrinter
+    100030: tower_powerCablePrinter_end
+    100032: tower_powerCablePrinterDesktop
+    100034: tower_powerCablePrinterDesktop_end
+    100036: tower_powerCablePrinterNoBreak
+    100038: tower_powerCablePrinterNoBreak_end
+    100040: tower_printer
+    100042: tower_printer 1
+    100044: tower_printerPlateBase
+    100046: tower_printerPlateMid
+    100048: tower_printerPlateTip
+    100050: tower_printerPlateTip_end
+    100052: tower_rotateCTRL
+    100054: tower_wifi
+    100056: tower_wifi 1
+    100058: tower_wifi_end
+    400000: //RootNode
+    400002: tower_armature
+    400004: tower_base
+    400006: tower_chair
+    400008: tower_chair 1
+    400010: tower_chargerCable
+    400012: tower_desktop
+    400014: tower_desktop 1
+    400016: tower_master
+    400018: tower_noBreak
+    400020: tower_noBreak 1
+    400022: tower_plateBase
+    400024: tower_plateMid
+    400026: tower_plateTip
+    400028: tower_powerCablePrinter
+    400030: tower_powerCablePrinter_end
+    400032: tower_powerCablePrinterDesktop
+    400034: tower_powerCablePrinterDesktop_end
+    400036: tower_powerCablePrinterNoBreak
+    400038: tower_powerCablePrinterNoBreak_end
+    400040: tower_printer
+    400042: tower_printer 1
+    400044: tower_printerPlateBase
+    400046: tower_printerPlateMid
+    400048: tower_printerPlateTip
+    400050: tower_printerPlateTip_end
+    400052: tower_rotateCTRL
+    400054: tower_wifi
+    400056: tower_wifi 1
+    400058: tower_wifi_end
+    2100000: tower_chair
+    2100002: tower_noBreak
+    2100004: tower_desktop
+    2100006: tower_wifi
+    2100008: tower_printer
+    2100010: tower_chargerCable
+    4300000: tower_base
+    4300002: tower_chair
+    4300004: tower_noBreak
+    4300006: tower_desktop
+    4300008: tower_wifi
+    4300010: tower_printer
+    4300012: tower_plateBase
+    4300014: tower_plateMid
+    4300016: tower_plateTip
+    4300018: tower_chargerCable
+    7400000: tower_armature|tower_armatureAction
+    7400002: tower_armature|tower_wifiAction
+    9500000: //RootNode
+    13700000: tower_base
+    13700002: tower_chair
+    13700004: tower_chargerCable
+    13700006: tower_desktop
+    13700008: tower_noBreak
+    13700010: tower_plateBase
+    13700012: tower_plateMid
+    13700014: tower_plateTip
+    13700016: tower_printer
+    13700018: tower_wifi
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
